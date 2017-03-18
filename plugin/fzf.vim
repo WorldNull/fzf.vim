@@ -41,9 +41,9 @@ function! s:defs(commands)
 endfunction
 
 call s:defs([
-\'command!      -bang -nargs=? -complete=dir Files       call fzf#vim#files(<q-args>, <bang>0)',
-\'command!      -bang -nargs=? GitFiles                  call fzf#vim#gitfiles(<q-args>, <bang>0)',
-\'command!      -bang -nargs=? GFiles                    call fzf#vim#gitfiles(<q-args>, <bang>0)',
+\'command!      -bang -nargs=? -complete=dir ff          call fzf#vim#files(<q-args>, <bang>0)',
+\'command!      -bang -nargs=? gg                        call fzf#vim#gitfiles(<q-args>, <bang>0)',
+\'command!      -bang -nargs=? gg                        call fzf#vim#gitfiles(<q-args>, <bang>0)',
 \'command! -bar -bang -nargs=? -complete=buffer Buffers  call fzf#vim#buffers(<q-args>, <bang>0)',
 \'command!      -bang -nargs=* Lines                     call fzf#vim#lines(<q-args>, <bang>0)',
 \'command!      -bang -nargs=* BLines                    call fzf#vim#buffer_lines(<q-args>, <bang>0)',
